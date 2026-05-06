@@ -259,18 +259,18 @@
     Problem: Given a number, print the absolute value of the number.
 */
 
-let number = -5;
+// let number = -5;
 
-// check if the number is positive
-if (number > 0) {
-    // if yes, print it
-    console.log(number);
-} else {
-    // if no, convert the number into positive
-    number = number * -1;
-    // and then print it
-    console.log(number);
-}
+// // check if the number is positive
+// if (number > 0) {
+//     // if yes, print it
+//     console.log(number);
+// } else {
+//     // if no, convert the number into positive
+//     number = number * -1;
+//     // and then print it
+//     console.log(number);
+// }
 
 // let number = 5;
 
