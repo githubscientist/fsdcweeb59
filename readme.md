@@ -20,10 +20,14 @@ For executing JavaScript in the server side, we can use Node.js which is a runti
 [x] if, else, switch
 [x] for, while loops, do...while loops
 [x] loop control (break, continue)
-[ ] Declaring/calling functions, parameters, return
-[ ] Function Types
-[ ] scope types
+[x] Declaring/calling functions, parameters, return
+[x] Function Types
+[ ] Array & Array Methods
+[ ] JSON Iteration
+[ ] Objects
+[ ] Scope types
 [ ] Hoisting
+
 
 Practice Problems:
 
