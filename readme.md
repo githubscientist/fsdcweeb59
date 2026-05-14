@@ -1,87 +1,24 @@
-# JavaScript
+# Product Based Companies vs Service Based Companies
 
-## JavaScript Language
+## Product Based Companies
 
-- It's a high-level programming language that is widely used for web development.
-- It is also called as a "language of the web" because it is supported by all modern web browsers.
-- It is a versatile language that can be used for both client-side and server-side development.
-- It is developed using C and C++ programming languages.
-- It is an interpreted language, which means that it does not need to be compiled before it can be executed.
-
-For executing JavaScript in the client side, we can execute it in the browser console or in the script tag in the HTML file. 
-
-For executing JavaScript in the server side, we can use Node.js which is a runtime environment for executing JavaScript code outside of a web browser.
-
-## Topics To Be Covered
-
-[x] Introduction to JavaScript
-[x] Variables and Data Types
-[x] Operators -- Bitwise Operators (pending)
-[x] if, else, switch
-[x] for, while loops, do...while loops
-[x] loop control (break, continue)
-[x] Declaring/calling functions, parameters, return
-[x] Function Types
-[ ] Array & Array Methods
-[ ] JSON Iteration
-[ ] Objects
-[ ] Scope types
-[ ] Hoisting
+- Product based companies are those that create and sell their own products or services to customers. 
+- Examples: Apple, Microsoft, Google, Amazon, Tesla, Paypal, ZOHO, ThoughtWorks, etc.
+- The type of work in product based companies is usually focused on developing and improving their own products or services, which can be more specialized and technical in nature.
+- Interview Process:
+    - 1st Round: Aptitude Test, MCQ's from CS Fundamentals, DS & Algo, OOPS, etc.
+    - 2nd Round: Coding Round (from 2 to 4 rounds depending on the company), System Design, Development Round, etc.
+    - 3rd Round: Technical Interview, HR Interview, etc.
+- Salary Range: from 10 LPA to 50 LPA depending on the company and the role.
 
 
-Practice Problems:
+## Service Based Companies
 
-1. Write a JavaScript program to print the squares of the first 10 natural numbers.
-
-Example:
-
-output:
-
-1
-4
-9
-16
-25
-36
-49
-64
-81
-100
-
-2. Write a JavaScript program to check if a given number is a positive, negative, or zero.
-
-Example1:
-
-number = 5
-
-output: 5 is a positive number.
-
-Example2:
-
-number = -3
-
-output: -3 is a negative number.
-
-Example3:
-
-number = 0
-
-output: 0 is zero.
-
-3. Write a JavaScript program to find the sum of first n natural numbers.
-
-Example1:
-
-let n = 5;
-
-output: The sum of first 5 natural numbers is 15.
-
-Explanation: The sum of first 5 natural numbers is calculated as 1 + 2 + 3 + 4 + 5 = 15.
-
-Example2:
-
-let n = 10;
-
-output: The sum of first 10 natural numbers is 55.
-
-Explanation: The sum of first 10 natural numbers is calculated as 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 = 55.
+- Service based companies are those that provide services to other businesses or individuals.
+- Examples: TCS, Infosys, Wipro, Accenture, Capgemini, Cognizant, etc.
+- The type of work in service based companies is usually project-based, where employees work on different projects for different clients.
+- Interview Process: 
+    - 1st Round: Aptitude Test, Logical Reasoning, Verbal Ability, etc.
+    - 2nd Round: Group Discussion, Email Writing, etc.
+    - 3rd Round: Technical Interview, HR Interview, etc.
+- Salary Range: from 3 LPA to 10 LPA depending on the company and the role.
