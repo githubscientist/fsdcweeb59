@@ -37,3 +37,11 @@ Let's say you have a local repository that you want to push to GitHub. You can f
     ```
     git push -u origin master
     ```
+
+## Callback Functions
+
+- A callback function is a function that is passed as an argument to another function. 
+
+## Higher-Order Functions
+
+- A higher-order function is a function that takes another function as an argument or returns a function as its result.
