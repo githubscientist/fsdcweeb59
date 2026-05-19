@@ -11,3 +11,13 @@ HTML is the standard markup language for creating web pages. It describes the st
 </html>
 
 - To mark the beginning and end of an HTML document.
+
+<head>
+</head>
+
+- Contains meta-information about the document, such as the title, character set, and links to stylesheets.
+
+<body>
+</body>
+
+- Contains the content of the web page that will be displayed to the user.
