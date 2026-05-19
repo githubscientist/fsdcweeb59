@@ -2,22 +2,22 @@
 
 HTML is the standard markup language for creating web pages. It describes the structure of a web page and consists of a series of elements that define different parts of the content, such as headings, paragraphs, links, images, and more.
 
-<!DOCTYPE html>
+!DOCTYPE html
 
 - This will tell the browser that this document is an HTML5 document.
 
-<html>
-
-</html>
+html tag:
 
 - To mark the beginning and end of an HTML document.
 
-<head>
-</head>
+head tag:
 
 - Contains meta-information about the document, such as the title, character set, and links to stylesheets.
 
-<body>
-</body>
+body tag:
 
 - Contains the content of the web page that will be displayed to the user.
+
+table tag:
+
+- Used to create a table in HTML. It consists of rows and columns, and can contain various types of data.
