@@ -1,15 +1,9 @@
-/* external css styling */
-/* css selectors */
-/* html tag selectors */
-/* rulesets */
-
+/* element selector */
 h1 {
-    /* rules or properties */
-    /* key: value pair */
     color: green;
-    /* font-size: 96px; */
 }
 
-p {
-    color: purple;
+/* id selector */
+#last-updated {
+    color: gray;
 }
