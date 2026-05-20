@@ -50,6 +50,21 @@ a[href="https://www.guvi.in/blog/category/mern"] {
 } */
 
 /* child selectors */
-ol>li {
+/* ol>li {
     color: blue;
+} */
+
+#ordered-list>li {
+    color: blue;
+}
+
+/* sibling selectors */
+/* adjacent sibling selector */
+/* h2 + p {
+    color: red;
+} */
+
+/* general sibling selector */
+h2 ~ p {
+    color: red;
 }
