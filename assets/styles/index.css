@@ -32,3 +32,14 @@ h1 {
 .red {
     color: red;
 }
+
+/* note: last applied style will have the high priority */
+/* combined selectors */
+h1, h2, h3 {
+    color: green;
+}
+
+/* attribute selectors */
+a[href="https://www.guvi.in/blog/category/mern"] {
+    color: darkgray;
+}
