@@ -1,23 +1,15 @@
-# HTML - HyperText Markup Language
+# CSS: Cascading Style Sheets
 
-HTML is the standard markup language for creating web pages. It describes the structure of a web page and consists of a series of elements that define different parts of the content, such as headings, paragraphs, links, images, and more.
+- CSS is a stylesheet language used to describe the presentation of a document written in HTML.
+- It allows you to control the layout, colors, fonts, and overall appearance of a web page.
+- CSS works by associating rules with HTML elements. These rules govern how the content of specified elements should be displayed.
 
-!DOCTYPE html
+## Three ways to add CSS to HTML:
 
-- This will tell the browser that this document is an HTML5 document.
+1. Inline CSS: Using the `style` attribute within HTML elements.
+   ```html
+   <p style="color: blue; font-size: 20px;">This is an inline styled paragraph.</p>
+   ```
 
-html tag:
-
-- To mark the beginning and end of an HTML document.
-
-head tag:
-
-- Contains meta-information about the document, such as the title, character set, and links to stylesheets.
-
-body tag:
-
-- Contains the content of the web page that will be displayed to the user.
-
-table tag:
-
-- Used to create a table in HTML. It consists of rows and columns, and can contain various types of data.
+2. Internal CSS
+3. External CSS
