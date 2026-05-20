@@ -43,3 +43,55 @@
      color: green;
    }
    ```
+2. Class Selector: Selects elements with a specific class attribute.
+   ```css
+   .highlight {
+     background-color: yellow;
+   }
+   ```
+3. ID Selector: Selects a single element with a specific id attribute.
+   ```css   
+    #main-header {
+      font-size: 24px;
+    }
+    ```
+4. Attribute Selector: Selects elements based on an attribute or attribute value.
+   ```css
+    a[target="_blank"] {  
+      color: orange;  
+    }
+    ```
+5. Descendant Selector: Selects elements that are descendants of a specified element.
+   ```css
+    div p {
+      color: purple;
+    }
+    ```
+
+6. Child Selector: Selects elements that are direct children of a specified element.
+   ```css
+    ul > li {
+      list-style-type: square;
+    }
+    ```
+7. Adjacent Sibling Selector: Selects an element that is immediately preceded by a specified element.
+   ```css
+    h1 + p {
+      margin-top: 0;
+    }
+    ```
+8. General Sibling Selector: Selects all elements that are siblings of a specified element.
+   ```css
+    h2 ~ p {
+      color: gray;
+    } 
+    ```
+
+## Box Model
+
+- There are four components of the CSS box model: content, padding, border, and margin.
+- The content is the innermost part of the box where text and images appear.
+- Padding is the space between the content and the border.
+- The border is the line that surrounds the padding and content.
+- Margin is the outermost layer that creates space between the element and other elements on the page.
+- This is called as Box Model because every element on a web page is represented as a rectangular box, and the box model describes how these boxes are structured and how they interact with each other.

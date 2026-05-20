@@ -1,70 +1,40 @@
-/* element selector */
-h1 {
-    color: green;
-}
-
-/* id selector */
-#last-updated {
-    color: gray;
-}
-
-/* class selectors */
-.highlight {
-    background-color: yellow;
-}
-
-.italic {
-    font-style: italic;
-}
-
-.bold {
-    font-weight: bold;
-}
-
-.green {
-    color: green;
-}
-
-.blue {
-    color: blue;
-}
-
-.red {
-    color: red;
-}
-
-/* note: last applied style will have the high priority */
-/* combined selectors */
-h1, h2, h3 {
-    color: green;
-}
-
-/* attribute selectors */
-a[href="https://www.guvi.in/blog/category/mern"] {
-    color: darkgray;
-}
-
-/* descendant selectors */
-/* ol li {
-    color: blue;
+/* * {
+    margin: 0px;
+    padding: 0px;
 } */
 
-/* child selectors */
-/* ol>li {
-    color: blue;
-} */
+#hello {
+    /* padding: 40px;
+    border: 1px solid red;
+    margin: 10px; */
 
-#ordered-list>li {
-    color: blue;
+    /* all the sides */
+    /* padding: 10px; */
+
+    /* top&bottom left&right */
+    /* padding: 10px 20px; */
+
+    /* top left&right bottom */
+    /* padding: 10px 20px 30px; */
+
+    /* top right bottom left */
+    /* padding: 10px 20px 30px 40px; */
+
+    /* padding-top: 20px; */
+    /* padding-bottom: 20px; */
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+
+    /* margin: 30px; */
+    /* margin: 10px 20px; */
+} 
+
+#timestamp, #readingtime {
+    border-right: 2px solid black;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
-/* sibling selectors */
-/* adjacent sibling selector */
-/* h2 + p {
-    color: red;
-} */
-
-/* general sibling selector */
-h2 ~ p {
-    color: red;
+#views {
+    padding-left: 10px;
 }
