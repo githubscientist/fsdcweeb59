@@ -43,3 +43,13 @@ h1, h2, h3 {
 a[href="https://www.guvi.in/blog/category/mern"] {
     color: darkgray;
 }
+
+/* descendant selectors */
+/* ol li {
+    color: blue;
+} */
+
+/* child selectors */
+ol>li {
+    color: blue;
+}
