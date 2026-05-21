@@ -95,3 +95,12 @@
 - The border is the line that surrounds the padding and content.
 - Margin is the outermost layer that creates space between the element and other elements on the page.
 - This is called as Box Model because every element on a web page is represented as a rectangular box, and the box model describes how these boxes are structured and how they interact with each other.
+
+## CSS Positioning
+
+1. Static Positioning: This is the default positioning for all elements. Elements are positioned according to the normal flow of the document.
+   ```css
+   .static {
+     position: static;
+   }
+   ```
