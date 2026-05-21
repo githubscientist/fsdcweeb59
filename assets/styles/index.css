@@ -1,3 +1,8 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 .box {
     width: 100px;
     height: 100px;
@@ -20,4 +25,10 @@
     position: relative;
     top: 50px;
     left: 50px;
+}
+
+.green {
+    position: absolute;
+    left: 100px;
+    top: 0;
 }
