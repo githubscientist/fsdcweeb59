@@ -1,3 +1,7 @@
-#hello-header {
-    position: static;
+.hero-header {
+    position: fixed;
+    /* opacity: 0.1; */
+    width: 100px;
+    right: 10px;
+    top: 10px;
 }

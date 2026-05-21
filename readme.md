@@ -104,3 +104,14 @@
      position: static;
    }
    ```
+
+2. Fixed Positioning: Elements with fixed positioning are positioned relative to the viewport and do not move when the page is scrolled.
+   ```css
+   .fixed {
+     position: fixed;
+     top: 0;
+     left: 0;
+   }
+   ```
+
+viewport is the visible area of a web page on a user's screen.
