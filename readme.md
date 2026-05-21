@@ -105,7 +105,12 @@
    }
    ```
 
-2. Fixed Positioning: Elements with fixed positioning are positioned relative to the viewport and do not move when the page is scrolled.
+2. Fixed Positioning: 
+
+- Elements with fixed positioning are positioned relative to the viewport and do not move when the page is scrolled.
+- We can move the element to a specific position on the screen using the `top`, `right`, `bottom`, and `left` properties.
+- All the other elements on the page will not be affected by the fixed element, and it will not take up any space in the normal flow of the document (i.e., other elements will behave as if the fixed element does not exist).
+
    ```css
    .fixed {
      position: fixed;
@@ -115,3 +120,11 @@
    ```
 
 viewport is the visible area of a web page on a user's screen.
+
+3. Sticky Positioning: Elements with sticky positioning are positioned based on the user's scroll position. They toggle between relative and fixed positioning depending on the scroll position.
+   ```css
+   .sticky {
+     position: sticky;
+     top: 0;
+   }
+   ```

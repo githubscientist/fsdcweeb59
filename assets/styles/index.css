@@ -1,7 +1,12 @@
 .hero-header {
     position: fixed;
     /* opacity: 0.1; */
-    width: 100px;
+    width: 50px;
     right: 10px;
     top: 10px;
+}
+
+.header {
+    position: sticky;
+    top: 5px;
 }
