@@ -128,3 +128,12 @@ viewport is the visible area of a web page on a user's screen.
      top: 0;
    }
    ```
+
+4. Relative Positioning: Elements with relative positioning are positioned relative to their normal position in the document flow. You can use the `top`, `right`, `bottom`, and `left` properties to move the element from its normal position.
+   ```css
+   .relative {
+     position: relative;
+     top: 10px;
+     left: 20px;
+   }
+   ```

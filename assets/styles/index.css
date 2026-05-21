@@ -1,10 +1,23 @@
-.bold-red {
-    font-size: 64px;
-    color: red;
+.box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
 }
 
-.header {
-    border: 1px solid lightgray;
-    padding: 10px;
-    box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.2);  
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    position: relative;
+    top: 50px;
+    left: 50px;
 }
