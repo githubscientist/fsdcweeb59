@@ -1,53 +1,10 @@
-.hero-header {
-    position: fixed;
-    /* opacity: 0.1; */
-    width: 50px;
-    right: 10px;
-    top: 10px;
+.bold-red {
+    font-size: 64px;
+    color: red;
 }
 
 .header {
-    border: 1px solid gray;
-    background-color: blueviolet;
-    color: white;
+    border: 1px solid lightgray;
     padding: 10px;
-    position: sticky;
-    top: 0px;
-    height: 27.5px;
-}
-
-.header ~ h3{
-    border: 1px solid gray;
-    background-color: aqua;
-    padding: 10px;
-}
-
-.first {
-    position: sticky;
-    top: 49.5px;
-}
-
-.second {
-    position: sticky;
-    top: 93px;
-}
-
-.third {
-    position: sticky;
-    top: 136.5px;
-}
-
-.four {
-    position: sticky;
-    top: 180px;
-}
-
-.five {
-    position: sticky;
-    top: 223.5px;
-}
-
-.six {
-    position: sticky;
-    top: 267px;
+    box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.2);  
 }
