@@ -28,30 +28,29 @@
     /* flex-direction: column-reverse; */
     gap: 4px;
     flex-wrap: wrap;
+    justify-content: end;
+    /* justify-content: space-around; */
+    /* align-items: center; */
 }
 
-/* .text {
-    background-color: #6963e1;
-    width: 25px;
-    padding: 6px 2px;
-    border-radius: 6px;
-    color: white;
-    text-align: center;
-} */
-
-.green {
-    color: #0b9f4e;
+.live-classes {
+    /* flex-grow: 2; */
+    /* flex-shrink: 1; */
+    flex-grow: 1;
 }
 
-.usp-section {
-    display: flex;
-    /* flex-direction: row-reverse; */
-    gap: 10px;
+.courses {
+    flex-grow: 1;
 }
 
-.right-side {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.practice {
+    flex-grow: 1;
+}
+
+.resources {
+    flex-grow: 1;
+}
+
+.our-products {
+    flex-grow: 1;
 }
