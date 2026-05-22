@@ -141,3 +141,7 @@ viewport is the visible area of a web page on a user's screen.
 ## Flexbox Layout
 
 - Flexbox is a layout model that allows you to design complex layouts with ease. It provides a more efficient way to lay out, align, and distribute space among items in a container, even when their size is unknown or dynamic.
+
+## Responsive Web Design
+
+- Responsive web design is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes. 
