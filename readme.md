@@ -1,147 +1,22 @@
-# CSS: Cascading Style Sheets
+# Tailwind CSS
 
-- CSS is a stylesheet language used to describe the presentation of a document written in HTML.
-- It allows you to control the layout, colors, fonts, and overall appearance of a web page.
-- CSS works by associating rules with HTML elements. These rules govern how the content of specified elements should be displayed.
+Let's first understand few terminologies before we dive into Tailwind CSS like libraries, frameworks, and utility-first CSS.
 
-## Three ways to add CSS to HTML:
+## Libraries, Frameworks, and Utility-first CSS
 
-1. Inline CSS: Using the `style` attribute within HTML elements.
-   ```html
-   <p style="color: blue; font-size: 20px;">This is an inline styled paragraph.</p>
-   ```
+### Libraries
 
-2. Internal CSS: Placing CSS rules within a `<style>` tag in the `<head>` section of the HTML document.
-   ```html
-   <head>
-     <style>
-       p {
-         color: red;
-         font-size: 18px;
-       }
-     </style>
-   </head>
-   <body>
-     <p>This is an internally styled paragraph.</p>
-   </body>
-   ```
-3. External CSS: Linking to an external CSS file using the `<link>` tag in the `<head>` section.
-   ```html
-   <head>
-     <link rel="stylesheet" type="text/css" href="styles.css">
-   </head>
-   <body>
-     <p>This is a paragraph styled with an external CSS file.</p>
-   </body>
-   ```
+- A library is a collection of pre-written code that developers can use to perform common tasks. It provides specific functionality and can be integrated into a project as needed. Examples include Bootstrap and Tailwind CSS. 
+- Libraries are sometimes called as modules or packages.
 
-## CSS Selectors
+### Frameworks
 
-1. Element Selector: Selects all elements of a specific type.
-   ```css
-   p {
-     color: green;
-   }
-   ```
-2. Class Selector: Selects elements with a specific class attribute.
-   ```css
-   .highlight {
-     background-color: yellow;
-   }
-   ```
-3. ID Selector: Selects a single element with a specific id attribute.
-   ```css   
-    #main-header {
-      font-size: 24px;
-    }
-    ```
-4. Attribute Selector: Selects elements based on an attribute or attribute value.
-   ```css
-    a[target="_blank"] {  
-      color: orange;  
-    }
-    ```
-5. Descendant Selector: Selects elements that are descendants of a specified element.
-   ```css
-    div p {
-      color: purple;
-    }
-    ```
+- A framework is a more comprehensive and structured approach to software development. It provides a foundation and set of guidelines for building applications. Frameworks often include libraries, tools, and conventions that help developers create applications more efficiently. Examples include React.
 
-6. Child Selector: Selects elements that are direct children of a specified element.
-   ```css
-    ul > li {
-      list-style-type: square;
-    }
-    ```
-7. Adjacent Sibling Selector: Selects an element that is immediately preceded by a specified element.
-   ```css
-    h1 + p {
-      margin-top: 0;
-    }
-    ```
-8. General Sibling Selector: Selects all elements that are siblings of a specified element.
-   ```css
-    h2 ~ p {
-      color: gray;
-    } 
-    ```
+### Utility-first CSS
 
-## Box Model
+- Utility-first CSS is a design approach that emphasizes the use of small, single-purpose classes to style elements. Instead of writing custom CSS for each component, developers can apply pre-defined utility classes directly in their HTML. This promotes consistency and reduces the need for custom CSS. Tailwind CSS is an example of a utility-first CSS framework.
 
-- There are four components of the CSS box model: content, padding, border, and margin.
-- The content is the innermost part of the box where text and images appear.
-- Padding is the space between the content and the border.
-- The border is the line that surrounds the padding and content.
-- Margin is the outermost layer that creates space between the element and other elements on the page.
-- This is called as Box Model because every element on a web page is represented as a rectangular box, and the box model describes how these boxes are structured and how they interact with each other.
+### Tailwind CSS
 
-## CSS Positioning
-
-1. Static Positioning: This is the default positioning for all elements. Elements are positioned according to the normal flow of the document.
-   ```css
-   .static {
-     position: static;
-   }
-   ```
-
-2. Fixed Positioning: 
-
-- Elements with fixed positioning are positioned relative to the viewport and do not move when the page is scrolled.
-- We can move the element to a specific position on the screen using the `top`, `right`, `bottom`, and `left` properties.
-- All the other elements on the page will not be affected by the fixed element, and it will not take up any space in the normal flow of the document (i.e., other elements will behave as if the fixed element does not exist).
-
-   ```css
-   .fixed {
-     position: fixed;
-     top: 0;
-     left: 0;
-   }
-   ```
-
-viewport is the visible area of a web page on a user's screen.
-
-3. Sticky Positioning: Elements with sticky positioning are positioned based on the user's scroll position. They toggle between relative and fixed positioning depending on the scroll position.
-   ```css
-   .sticky {
-     position: sticky;
-     top: 0;
-   }
-   ```
-
-4. Relative Positioning: Elements with relative positioning are positioned relative to their normal position in the document flow. You can use the `top`, `right`, `bottom`, and `left` properties to move the element from its normal position.
-   ```css
-   .relative {
-     position: relative;
-     top: 10px;
-     left: 20px;
-   }
-   ```
-
-## Flexbox Layout
-
-- Flexbox is a layout model that allows you to design complex layouts with ease. It provides a more efficient way to lay out, align, and distribute space among items in a container, even when their size is unknown or dynamic.
-
-## Responsive Web Design
-
-- Responsive web design is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes. 
+- Tailwind CSS is a utility-first CSS framework that provides a wide range of pre-defined classes for styling HTML elements. 
