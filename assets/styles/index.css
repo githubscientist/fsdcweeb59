@@ -54,3 +54,25 @@
 .our-products {
     flex-grow: 1;
 }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.navbar {
+    display: none;
+}
+
+/* devices with width 992px and more */
+@media (min-width: 992px){
+    .navicon {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+    }
+}
