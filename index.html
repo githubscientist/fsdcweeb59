@@ -6,32 +6,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tailwind CSS</title>
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     </head>
 
-    <body>
-        <p class="font-thin">Hello World!</p>
-        <p class="font-extralight">Hello World!</p>
-        <p class="font-light">Hello World!</p>
-        <p class="font-normal">Hello World!</p>
-        <p class="font-medium">Hello World!</p>
-        <p class="font-semibold">Hello World!</p>
-        <p class="font-bold">Hello World!</p>
-        <p class="font-extrabold">Hello World!</p>
-        <!-- <p class="italic text-left text-5xl">Hello World!</p>
-        <p class="italic text-right text-5xl">Hello World!</p>
-        <p class="italic text-center text-5xl">Hello World!</p>
-        <p class="italic text-justify text-5xl">Hello World!</p>
-        <p class="italic text-start text-5xl">Hello World!</p>
-        <p class="italic text-end text-5xl">Hello World!</p> -->
+    <body class="m-8">
 
-        <p class="text-center text-5xl bg-red-700 text-white m-4 p-4 border-2">Hello World</p>
+        <div class="max-w-75 shadow-2xl rounded-lg">
+            <div>
+                <img src="./assets/images/datascience.png" alt="" width="320px">
+            </div>
 
-        <img src="./assets/images/profile-pic.png" alt="profile picture" width="100px" class="rounded-full">
+            <div class="p-4">
+                <h3 class="font-bold text-lg mb-8">Master Data Science Course with IITM Pravartak Certification</h3>
 
-        <div class="border border-gray-400">
-            <img src="./assets/images/mern.webp" alt="">
+                <div class="flex gap-2 mb-4">
+                    <span class="material-symbols-outlined">
+                        language
+                    </span>
+                    <p>Tamil, English & Hindi</p>
+                </div>
 
-            
+                <div class="flex justify-around">
+                    <button
+                        class="border py-2 px-6  rounded-sm hover:bg-black hover:text-white hover:cursor-pointer">Syllabus</button>
+                    <button
+                        class="border py-2 px-6 rounded-sm bg-green-600 text-white hover:bg-green-800 hover:cursor-pointer">Know
+                        More</button>
+                </div>
+            </div>
         </div>
     </body>
 
