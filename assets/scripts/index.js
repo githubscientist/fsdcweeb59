@@ -1,9 +1,16 @@
-const headers = document.getElementsByTagName('h1');
+// Task: Select the h1 using document.getElementById().
+const h1 = document.getElementById('mainTitle');
 
-headers[0].style.color = 'green';
+// Do these changes:
+// Expected changes:
+// Text: "Welcome to JavaScript DOM"
+h1.textContent = 'Welcome to JavaScript DOM';
 
-const paragraphs = document.getElementsByTagName('p');
+// Color: blue
+h1.style.color = 'blue';
 
-for (let index = 0; index < paragraphs.length; index++){
-    paragraphs[index].style.color = 'red';
-}
+// Background color: lightyellow
+h1.style.backgroundColor = 'lightyellow';
+
+// Padding: 15px
+h1.style.padding = '15px';
