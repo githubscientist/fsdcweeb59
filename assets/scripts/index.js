@@ -1,1 +1,1 @@
-console.log(document.getElementsByTagName('h1')[1].textContent);
+console.log(document.getElementsByName("header")[0].textContent);
