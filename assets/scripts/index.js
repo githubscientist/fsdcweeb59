@@ -67,3 +67,12 @@ function fetchProducts() {
     // append the table to the container
     container.append(table);
 }
+
+// get the reference of the button
+const buttonFetchProducts = document.getElementById('buttonFetchProducts');
+
+// add an event listener (click event) to this button
+buttonFetchProducts
+    .addEventListener('click', () => {
+        fetchProducts();
+    });
