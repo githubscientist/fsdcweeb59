@@ -14,3 +14,13 @@
 - A Promise can be in one of three states: pending, fulfilled, or rejected.
 
 - Promises provide a cleaner and more manageable way to handle asynchronous operations compared to callbacks, avoiding callback hell and improving code readability.
+
+### Callbacks
+
+- A callback is a function that is passed as an argument to another function and is executed after the completion of a certain task.
+
+- Callbacks can lead to callback hell, where multiple nested callbacks make the code difficult to read and maintain.
+
+### Async/Await
+
+- Async/Await is a syntactic sugar built on top of Promises that allows you to write asynchronous code in a more synchronous and readable manner.
