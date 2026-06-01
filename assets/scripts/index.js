@@ -12,7 +12,7 @@ let promise = new Promise((resolve, reject) => {
 
     // after 3 seconds, let's resolve the async function
     setTimeout(() => {
-        reject(error);
+        resolve(error);
     }, 3000);
 }); 
 
@@ -28,4 +28,6 @@ promise
             // onrejected
             console.log('the promise is rejected');
             console.log('error:', error);
-        })
+    })
+
+console.log(promise);
