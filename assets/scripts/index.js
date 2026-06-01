@@ -1,38 +1,31 @@
-// asynchronous functions
-// two args: function to execute, timeout after which the function
-// needs to be executed
-// 3000 ms -> 3 seconds
-// setTimeout(() => {
-//     console.log('happy new year!');
-// }, 5000);
+// if the async function (executor) succeeds -> what we want the promise to do?
+// if the async function fails -> what we want the promise to do?
+let promise = new Promise((resolve, reject) => {
+    console.log('promise is initializing...');
 
-// setTimeout(() => {
-//     console.log('hello world!');
-// }, 3000);
+    // logic for the executor, async function within the promise
+    console.log('async function executed!');
 
-function sayHello() {
-    console.log('inside sayHello function');
+    // const data = [3, 4, 5, 6, 7];
 
-    // let's make sayHello to delay its execution
-    // initialize a sum variable to 0 to keep track of the sum of natural numbers
-    let sum = 0;
+    const error = 'fetching data failed';
 
-    // initialize the first natural number
-    let number = 1;
-    
-    // create a loop that runs for multiple times
-    while (number <= 5000000000) {
-        // add the current natural number to the sum variable
-        sum = sum + number;
+    // after 3 seconds, let's resolve the async function
+    setTimeout(() => {
+        reject(error);
+    }, 3000);
+}); 
 
-        // change/update the number to point to the next natural number
-        number++;
-    }
-
-    console.log('sum:', sum);
-}
-
-// executing the function sayHello
-sayHello();
-
-console.log('finished executing function sayHello');
+promise
+    .then((data) => {
+            // success callback -> resolve argument
+            // onfullfilled
+            console.log('the promise is resolved');
+            console.log(data);
+        })
+    .catch((error) => {
+            // failure callback -> reject argument
+            // onrejected
+            console.log('the promise is rejected');
+            console.log('error:', error);
+        })
