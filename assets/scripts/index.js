@@ -1,38 +1,57 @@
-function first(callback) {
-    console.log('starting first...');
-    // wait for 2 seconds
-    setTimeout(() => {
-        // call the callback
-        console.log('ending first...');
-        callback();
-    }, 2000);
+function first() {
+    return new Promise((resolve) => {
+        console.log('starting first...');
+        // wait for 2 seconds
+        setTimeout(() => {
+            // call the callback
+            console.log('ending first...');
+            resolve();
+        }, 2000);
+    })
 }
 
-function second(callback) {
-    console.log('starting second...');
+function second() {
+    return new Promise((resolve) => {
+        console.log('starting second...');
 
-    // wait for 3 seconds
-    setTimeout(() => {
-        console.log('ending second...');
-        callback();
-    }, 3000);
+        // wait for 3 seconds
+        setTimeout(() => {
+            console.log('ending second...');
+            resolve();
+        }, 3000);
+    })
 }
 
-function third(callback) {
-    console.log('starting third...');
+function third() {
+    return new Promise((resolve) => {
+        console.log('starting third...');
 
-    // wait for 5 seconds
-    setTimeout(() => {
-        console.log('ending third...');
-        callback();
-    }, 5000);
+        // wait for 5 seconds
+        setTimeout(() => {
+            console.log('ending third...');
+            resolve();
+        }, 5000);
+    })
 }
+
+
 
 // callback hell
-first(() => {
-    second(() => {
-        third(() => {
-            console.log('finished executing all functions...');
-        })
+// first(() => {
+//     second(() => {
+//         third(() => {
+//             console.log('finished executing all functions...');
+//         })
+//     })
+// });
+
+first()
+    .then(() => {
+        return second();
     })
-});
+    .then(() => {
+        return third();
+    })
+    .then(() => {
+        console.log('finished executing all functions...');
+    })
