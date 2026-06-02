@@ -1,32 +1,34 @@
-### Asynchronous vs Synchronous
+## Web Applications
 
-- Synchronous code is executed sequentially, blocking the execution of subsequent code until the current operation is complete.
+- If we use browser to access an application, it is called a web application. Web applications are accessed through a web browser and can be hosted on a server. They can be built using various technologies such as HTML, CSS, JavaScript, and backend frameworks.
 
-- Asynchronous code allows other operations to continue while waiting for a task to complete, preventing blocking and improving performance.
+## Architectures
 
-- By default, JavaScript is synchronous, meaning that it executes code in a single thread, blocking the execution of subsequent code until the current operation is complete.
+- There are different architectures for building web applications:
 
+    - Monolithic Architecture: In this architecture, the entire application is built as a single unit. It can be easier to develop and deploy but can become difficult to maintain as the application grows.
+    - Microservices Architecture: In this architecture, the application is broken down into smaller, independent services that communicate with each other. This allows for better scalability and maintainability but can be more complex to develop and deploy.
+    - Serverless Architecture: In this architecture, the application is built using serverless computing services
+    - Client-Server Architecture: In this architecture, the application is divided into two main components: the client (frontend) and the server (backend). The client is responsible for the user interface and user experience, while the server handles the business logic and data storage.
 
-### Promises
+## REST 
 
-- A Promise is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+- REST stands for Representational State Transfer. It is an architectural style for designing networked applications. RESTful APIs are based on the principles of REST and use HTTP methods to perform operations on resources.
 
-- A Promise can be in one of three states: pending, fulfilled, or rejected.
+## HTTP Requests
 
-- Promises provide a cleaner and more manageable way to handle asynchronous operations compared to callbacks, avoiding callback hell and improving code readability.
+When the user clicks/interacts with the frontend, it sends an HTTP request to the backend. The backend processes the request and sends back an HTTP response. The response contains the data that the frontend needs to update the user interface.
 
-### Callbacks
+## HTTP Methods
 
-- A callback is a function that is passed as an argument to another function and is executed after the completion of a certain task.
+- GET: Used to retrieve data from the server.
+- POST: Used to send data to the server to create a new resource.
+- PUT: Used to update an existing resource on the server.
+- DELETE: Used to delete a resource from the server.
+- PATCH: Used to partially update an existing resource on the server.
 
-- Callbacks can lead to callback hell, where multiple nested callbacks make the code difficult to read and maintain.
+### Libraries to make HTTP requests
 
-- Answer to callback hell is to use Promises or Async/Await, which provide a more structured and readable way to handle asynchronous operations.
-
-### Async/Await
-
-- Async/Await is a syntactic sugar built on top of Promises that allows you to write asynchronous code in a more synchronous and readable manner.
-
-await keyword helps to wait for a Promise to resolve or reject before proceeding with the next line of code, making it easier to handle asynchronous operations without blocking the main thread.
-
-await keywords are allowed only inside an async function, which is a function declared with the async keyword. This allows you to use await to pause the execution of the function until the Promise is resolved or rejected, making it easier to write and read asynchronous code.
+- XMLHttpRequest: A built-in JavaScript object that allows you to make HTTP requests.
+- Fetch API: A modern JavaScript API for making HTTP requests. It is built on top of Promises and provides a more flexible and powerful way to make HTTP requests.
+- Axios: A popular JavaScript library for making HTTP requests. It is built on top of the Fetch API and provides additional features such as interceptors and automatic JSON parsing.
