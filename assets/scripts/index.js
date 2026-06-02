@@ -45,13 +45,20 @@ function third() {
 //     })
 // });
 
+// first()
+//     .then(() => {
+//         return second();
+//     })
+//     .then(() => {
+//         return third();
+//     })
+//     .then(() => {
+//         console.log('finished executing all functions...');
+//     })
+
 first()
-    .then(() => {
-        return second();
-    })
-    .then(() => {
-        return third();
-    })
+    .then(second)
+    .then(third)
     .then(() => {
         console.log('finished executing all functions...');
     })
