@@ -21,6 +21,8 @@
 
 - Callbacks can lead to callback hell, where multiple nested callbacks make the code difficult to read and maintain.
 
+- Answer to callback hell is to use Promises or Async/Await, which provide a more structured and readable way to handle asynchronous operations.
+
 ### Async/Await
 
 - Async/Await is a syntactic sugar built on top of Promises that allows you to write asynchronous code in a more synchronous and readable manner.

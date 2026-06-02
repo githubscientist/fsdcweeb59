@@ -1,23 +1,38 @@
-// setTimeout
-// execute the function after 3 seconds, only once.
-// setTimeout(() => {
-//     console.log('after 5 seconds');
-// }, 3000);
+function first(callback) {
+    console.log('starting first...');
+    // wait for 2 seconds
+    setTimeout(() => {
+        // call the callback
+        console.log('ending first...');
+        callback();
+    }, 2000);
+}
 
-// setInterval -> asynchronous function
-// execute the function every 3 seconds
-// setInterval(() => {
-//     console.log('after 5 seconds');
-// }, 3000);
+function second(callback) {
+    console.log('starting second...');
 
-let timer = 10;
+    // wait for 3 seconds
+    setTimeout(() => {
+        console.log('ending second...');
+        callback();
+    }, 3000);
+}
 
-const countDownHandler = setInterval(() => {
-    console.log('countdown:', timer);
-    timer--;
-}, 1000);
+function third(callback) {
+    console.log('starting third...');
 
-setTimeout(() => {
-    clearInterval(countDownHandler);
-    console.log('Happy New Year!');
-}, 11000);
+    // wait for 5 seconds
+    setTimeout(() => {
+        console.log('ending third...');
+        callback();
+    }, 5000);
+}
+
+// callback hell
+first(() => {
+    second(() => {
+        third(() => {
+            console.log('finished executing all functions...');
+        })
+    })
+});
