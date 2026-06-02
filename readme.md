@@ -26,3 +26,7 @@
 ### Async/Await
 
 - Async/Await is a syntactic sugar built on top of Promises that allows you to write asynchronous code in a more synchronous and readable manner.
+
+await keyword helps to wait for a Promise to resolve or reject before proceeding with the next line of code, making it easier to handle asynchronous operations without blocking the main thread.
+
+await keywords are allowed only inside an async function, which is a function declared with the async keyword. This allows you to use await to pause the execution of the function until the Promise is resolved or rejected, making it easier to write and read asynchronous code.

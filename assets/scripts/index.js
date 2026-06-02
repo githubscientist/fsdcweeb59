@@ -56,9 +56,25 @@ function third() {
 //         console.log('finished executing all functions...');
 //     })
 
-first()
-    .then(second)
-    .then(third)
-    .then(() => {
-        console.log('finished executing all functions...');
-    })
+// first()
+//     .then(second)
+//     .then(third)
+//     .then(() => {
+//         console.log('finished executing all functions...');
+//     })
+
+// unsafe version but clean version
+// await first();
+// await second();
+// await third();
+// console.log('finished executing all functions...');
+
+// safer version
+async function executeFunctions() {
+    await first();
+    await second();
+    await third();
+    console.log('finished executing all functions...');
+}
+
+executeFunctions();
