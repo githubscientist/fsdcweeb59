@@ -1,6 +1,6 @@
 # TypeScript
 
-[ ] Introduction to TypeScript
+[x] Introduction to TypeScript
 [ ] Type Annotations
 [ ] TypeScript Basics
 [ ] Object Types
@@ -30,3 +30,28 @@
 - Enhanced readability and self-documentation
 - Easier refactoring and code navigation
 - Compatibility with existing JavaScript code and libraries
+
+## Dependencies and package.json
+
+### Dev Dependencies Vs Global Dependencies
+
+- Dev dependencies are packages that are only needed during development, such as typescript.
+- Global dependencies are packages that are required for both development and production, such as express.
+
+to install global dependencies, use the following command:
+
+```bash
+npm install <package-name>
+```
+
+to install dev dependencies, use the following command:
+
+```bash
+npm install <package-name> --save-dev
+```
+
+to uninstall a package, use the following command:
+
+```bash
+npm uninstall <package-name>
+```
