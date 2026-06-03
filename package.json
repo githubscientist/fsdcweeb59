@@ -20,8 +20,9 @@
   "type": "commonjs",
   "main": "Main.js",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx tsc Main.ts && node Main.js"
+    "start": "npm run build && node dist/Main.js"
   },
   "devDependencies": {
     "typescript": "^6.0.3"
