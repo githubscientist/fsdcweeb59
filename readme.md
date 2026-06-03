@@ -1,8 +1,8 @@
 # TypeScript
 
 [x] Introduction to TypeScript
-[ ] Type Annotations
-[ ] TypeScript Basics
+[x] Type Annotations
+[x] TypeScript Basics
 [ ] Object Types
 [ ] Optional & Readonly Properties
 [ ] Interfaces vs Type Aliases

@@ -1,4 +1,28 @@
 {
+  "name": "fsdcweeb59",
+  "version": "1.0.0",
+  "description": "TypeScript Application",
+  "keywords": [
+    "typescript",
+    "npm",
+    "node"
+  ],
+  "homepage": "https://github.com/githubscientist/fsdcweeb59#readme",
+  "bugs": {
+    "url": "https://github.com/githubscientist/fsdcweeb59/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/githubscientist/fsdcweeb59.git"
+  },
+  "license": "ISC",
+  "author": "Sathish Gnanaprakasam",
+  "type": "commonjs",
+  "main": "Main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx tsc Main.ts && node Main.js"
+  },
   "devDependencies": {
     "typescript": "^6.0.3"
   }
