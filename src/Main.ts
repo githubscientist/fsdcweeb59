@@ -1,14 +1,54 @@
+// Primitive Data Types in TypeScript
 
-// declaration statement with initialization: we are declaring a variable named 'x' of type 'number' and initializing it with the value 10
-// let x: number = 10;
-// console.log('value of x:', x);
+// // 1. Number
+// let age: number = 30;
+// console.log('Age:', age);
 
-// ----------------------------------------------------------
+// // 2. String
+// let name: string = 'Alice';
+// console.log('Name:', name);
 
-// data type of x is now 'number'
-let x: number = 10;
+// // 3. Boolean
+// let isStudent: boolean = true;
+// console.log('Is Student:', isStudent);
 
-// we cannot re-assign a value of a different type to 'x'
-x = 'ten'; // Error: Type 'string' is not assignable to type 'number'
+// // 4. Null
+// let nullValue: null = null;
+// console.log('Null Value:', nullValue);
 
-console.log('value of x:', x);
+// // 5. Undefined
+// let undefinedValue: undefined = undefined;
+// console.log('Undefined Value:', undefinedValue);
+
+// // 6. NaN (Not a Number)
+// let notANumber: number = NaN;
+// console.log('Not a Number:', notANumber);
+
+// 7. Symbol
+// let uniqueId: symbol = Symbol('unique');
+// console.log('Unique ID:', uniqueId);
+
+/* 
+    the main reason for creating symbols is to create unique identifiers for object properties.
+*/
+// let name: symbol = Symbol('name');
+
+// let person = {
+//     name: 'Alice',
+//     name: 'Bob' // This will cause an error in TypeScript but not in JavaScript
+// }
+
+// console.log(person);
+
+// -----------------------------------------------------------
+
+// the symbols can have same description but they are unique
+let name: symbol = Symbol('name');
+let name2: symbol = Symbol('name');
+
+let person = {
+    [name]: 'Alice',
+    [name2]: 'Bob'
+}
+
+console.log(person[name2]);
