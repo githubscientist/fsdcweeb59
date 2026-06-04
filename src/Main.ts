@@ -1,7 +1,24 @@
 /*
-    Tuple: A tuple is a fixed-length array where each element can have a different type. It allows you to group together values of different types into a single unit. 
+    enums: Enumerations or Enumeration Constants are a feature that allows us to define a set of named constants.
 */
 
-let tuple: [number, number, string, number] = [1, 2, 'hello', 5];
+// ratings 1-5
+// let ratings = {
+//     Terrible: 1,
+//     Bad: 2,
+//     Average: 3,
+//     Good: 4,
+//     Excellent: 5
+// }
 
-console.log(tuple);
+enum Ratings {
+    Terrible = 1,
+    Bad,
+    Average,
+    Good,
+    Excellent
+}
+
+let myRating: Ratings = Ratings.Excellent;
+
+console.log(myRating); // Output: 0
