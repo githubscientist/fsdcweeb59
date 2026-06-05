@@ -1,11 +1,15 @@
-// Till ES5
-// function prototyping
-function Student() {
-    this.name = '';
-    this.age = 0;
-    this.place = '';
+// ES6 -> classes and constructors
+// class
+class Student {
+    // a special method
+    // that gets called
+    constructor() {
+        this.name = '';
+        this.age = 0;
+        this.place = '';
+    }
 
-    this.getAge = () => {
+    getAge() {
         console.log('Age:', this.age);
     }
 }
@@ -26,4 +30,4 @@ s2.place = 'coimbatore';
 // console.log(s1);
 // console.log(s2);
 
-s1.getAge();
+s2.getAge();

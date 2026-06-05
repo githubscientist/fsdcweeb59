@@ -4,11 +4,11 @@
 [x] Type Annotations
 [x] TypeScript Basics
 [x] Functions with TypeScript
-[ ] Optional & Readonly Properties
+[x] Optional & Readonly Properties
+[ ] Classes in TypeScript
 [ ] Object Types
 [ ] Interfaces vs Type Aliases
 [ ] Generics Basics
-[ ] Classes in TypeScript
 
 ## Introduction to TypeScript
 
@@ -58,3 +58,21 @@ to uninstall a package, use the following command:
 ```bash
 npm uninstall <package-name>
 ```
+
+
+## Object Oriented Programming
+
+- Object-oriented programming (OOP) is a programming paradigm that organizes code into objects, which are instances of classes. OOP allows developers to create reusable and modular code by encapsulating data and behavior within objects.
+
+- Classes:
+    - Blueprint or template for creating objects
+    - Collection of Objects
+    - Defines properties and methods that the objects created from the class will have
+
+- Methods: 
+    - Functions that are defined within a class and can be called on instances of that class
+    - Define the behavior of the objects created from the class
+
+- Objects:
+    - Instances of a class that have their own state and behavior
+    - Created using the `new` keyword followed by the class name and parentheses
