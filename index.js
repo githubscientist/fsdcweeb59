@@ -1,6 +1,6 @@
 // function to add two numbers
 // default parameter
-function add(firstNumber, secondNumber = 0) {
+function add(firstNumber, secondNumber) {
     console.log(firstNumber + secondNumber);
 }
 
