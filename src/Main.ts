@@ -1,8 +1,13 @@
 // function to add two numbers
-function add(firstNumber: number, secondNumber: number): number {
-    return firstNumber + secondNumber;
+// optional parameter
+function add(firstNumber: number, secondNumber?: number): number {
+    if (secondNumber) {
+        return firstNumber + secondNumber;
+    }
+
+    return firstNumber;
 }
 
 // due to type inference, automatically inherits the number type
-let result: number = add(5, 6);
+let result: number = add(5);
 console.log(result);
