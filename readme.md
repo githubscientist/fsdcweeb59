@@ -5,10 +5,10 @@
 [x] TypeScript Basics
 [x] Functions with TypeScript
 [x] Optional & Readonly Properties
-[ ] Classes in TypeScript
-[ ] Object Types
-[ ] Interfaces vs Type Aliases
-[ ] Generics Basics
+[x] Classes in TypeScript
+[x] Object Types
+[x] Interfaces vs Type Aliases
+[x] Generics Basics
 
 ## Introduction to TypeScript
 
