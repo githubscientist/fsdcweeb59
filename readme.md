@@ -4,8 +4,8 @@
 [x] Type Annotations
 [x] TypeScript Basics
 [x] Functions with TypeScript
-[ ] Object Types
 [ ] Optional & Readonly Properties
+[ ] Object Types
 [ ] Interfaces vs Type Aliases
 [ ] Generics Basics
 [ ] Classes in TypeScript

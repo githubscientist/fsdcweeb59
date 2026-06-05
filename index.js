@@ -1,7 +1,7 @@
 // function to add two numbers
-function add(firstNumber, secondNumber) {
+// default parameter
+function add(firstNumber, secondNumber = 0) {
     console.log(firstNumber + secondNumber);
 }
 
-// add(5, 6);
-add('hello', 'world');
+add(5, );
