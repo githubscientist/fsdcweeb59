@@ -1,55 +1,41 @@
-// inline object type annotation
-// let student: {
-//     name: string;
-//     age: number;
-// } = {
-//     name: "Sathish",
-//     age: 25
+/*
+    Generics lets us write reusable code that can work with a variety of types rather than a single one. This is especially useful when we want to create data structures or functions that can operate on different types without sacrificing type safety.
+
+    In TypeScript, we can define a generic type by using angle brackets <>. We can use a placeholder type parameter (like T) to represent the type that will be specified when the generic is used.
+*/
+
+// function identity(value: any): any {
+//     return value;
 // }
 
-// console.log(student.name);
+// console.log(identity(42)); // Output: 42
+// console.log(identity("Hello")); // Output: Hello
+// console.log(identity(true)); // Output: true
 
-// type alias for object type annotation
-// type Student = {
-//     name: string;
-//     age: number;
-// } 
-
-// let student: Student = {
-//     name: "Sathish",
-//     age: 25
+// generic function which takes a value of type T and returns a value of the same type T
+// function identity<T>(value: T): T {
+//     return value;
 // }
 
-// console.log(student.name);
+// console.log(identity(42)); // Output: 42
+// console.log(identity("Hello")); // Output: Hello
+// console.log(identity(true)); // Output: true
 
-// interface for object type annotation
+// function identity<T>(value: T): number {
+//     if (value) return 1;
+//     else return 0;
+// }
 
-interface Student {
-    name: string;
-    age: number;
-} 
+// console.log(identity(true)); // Output: 1
+// console.log(identity(false)); // Output: 0
 
-let student: Student = {
-    name: "Sathish",
-    age: 25
+function identity<T>(value: T): number {
+    if (value) return 1;
+    else return 0;
 }
 
-console.log(student.name);
-
-/*
-    Inine Object Vs Type Alias Vs Interface
-
-    1. Inline Object Type Annotation:
-        - Used for simple, one-off object types.
-        - Not reusable, can lead to code duplication if used multiple times.
-
-    2. Type Alias:
-        - Used to create a new name for a type, including object types. 
-        - Can be used for complex types, unions, etc.
-        - Reusable across the codebase.
-
-    3. Interface:
-        - Specifically designed for defining object shapes.
-        - Supports declaration merging, allowing multiple declarations to be combined.
-        - Reusable and can be extended or implemented by classes.
-*/
+console.log(identity(true)); // Output: 1
+console.log(identity(false)); // Output: 0
+console.log(identity(42)); // Output: 1
+console.log(identity(-42)); // Output: 1
+console.log(identity(0)); // Output: 0
