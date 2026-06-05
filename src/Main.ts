@@ -1,6 +1,6 @@
 // function to add two numbers
-// default parameter
-function add(firstNumber: number, secondNumber: number = 0): number {
+// optional parameter
+function add(firstNumber: number, secondNumber?: number): number {
     if (secondNumber) {
         return firstNumber + secondNumber;
     }
